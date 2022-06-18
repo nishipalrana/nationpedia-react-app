@@ -1,0 +1,96 @@
+.marginTop{ 
+    display: flex;
+    margin: 100px 0 0 0;
+    justify-content: center;
+}
+
+.marginTop-about-us{ 
+    margin: 100px 0px;
+}
+
+.center{
+    text-align: center;
+}
+
+.goBackBtn{
+    float: right;
+    width: 100%;
+}
+
+.homePageBtn{
+    float: right;    
+}
+
+.homePageCard{
+    margin-bottom: 50px;   
+    font-weight: bold;
+    height: 300px;
+}
+
+
+
+.homePageCardImg{
+    min-width: 300px;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container-list{
+    margin: 1.5em;
+}
+
+.card-img{
+    max-width: inherit;
+    height: 180px;
+}
+
+.col{
+    margin-bottom: 2em;
+}
+
+.countryDropdown{
+    height: 20vh;
+}
+.countryDropdown > input{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+    height:30%;
+    position: relative;
+    top: 10vh;
+    left: 21%;
+    background-color: #ffc10793;
+}
+.countryDropdown > .dropDownButton{
+    border-radius: 4px;
+    min-width: 4%;
+    height:30%;
+    position: relative;
+    top: 9.5vh;
+    left: 22%;
+    
+}
+
+
+.countryFlag{
+    min-width:375px;
+    max-width: 375px;
+    margin: auto;
+}
+
+.country-info-card-header{
+    text-align: center;
+    font-size: 22px;
+}
+
+.list-item-country{
+    margin-top: 50px;
+}
