@@ -1,6 +1,11 @@
-# nationpedia-react-app
+# nationpedia-react-app [![Netlify Status](https://api.netlify.com/api/v1/badges/4aeef2d7-2ac9-4de4-a295-9335e945f185/deploy-status)](https://app.netlify.com/sites/nationpedia/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4aeef2d7-2ac9-4de4-a295-9335e945f185/deploy-status)](https://app.netlify.com/sites/nationpedia/deploys)
+### Nationpedia React App - Encyclopedia of Countries around the globe. Built with help of REST COUNTRIES API using React.js and Bootstrap. Hosted on Netlify
+--------
+
+![WebApp Mockup](src/assets/readmeMockup.png?raw=true "Mockup")
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
