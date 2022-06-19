@@ -32,14 +32,14 @@ export default function ViewAllCountryList() {
       <Row xl={4} xxl={4} md={2} lg={2} sm={1} xs={1}>
         {countryList.length > 0 &&
           countryList.map((country) => (
-            <Col key={country.name}>
+            <Col key={country.name.common}>
               <Card>
                 <Card.Img src={country.flags.png}></Card.Img>
                 <Card.Header>
-                  <b>{country.name}</b>
+                  <b>{country.name.common}</b>
                   <p>Capital : {country.capital ?? "Unknown"}</p>
                   <p>
-                    <Card.Link href={`/viewCountryInfo/${country.name}`}>
+                    <Card.Link href={`/viewCountryInfo/${country.name.common}`}>
                       Learn More
                     </Card.Link>
                   </p>
