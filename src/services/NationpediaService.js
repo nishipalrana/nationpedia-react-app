@@ -11,7 +11,7 @@ service.getCountryNameList = async () => {
 };
 
 service.getCountryInfo = async (name) => {
-  return axios.get(`https://restcountries.com/v3.1/name/${name}?fullText=true`);
+  return axios.get(`https://restcountries.com/v3.1/name/${name}`);
 };
 
 service.getCountriesByRegion = async (region) => {
