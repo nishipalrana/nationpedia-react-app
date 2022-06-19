@@ -6,6 +6,7 @@ import ViewCountriesByRegion from './components/pages/ViewCountriesByRegion';
 import ViewCountryInfo from './components/pages/ViewCountryInfo';
 import HomePage from './components/pages/HomePage';
 import AboutUs from './components/layout/AboutUs';
+import ViewCountriesByCurrency from './components/pages/ViewCountriesByCurrency';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact component={HomePage}></Route>
           <Route path="/AllCountries" component={ViewAllCountryList}></Route>
           <Route path="/CountriesByRegion" component={ViewCountriesByRegion}></Route>
+          <Route path="/ViewCountriesByCurrency" component={ViewCountriesByCurrency}></Route>
           <Route path="/viewCountryInfo/:name" component={ViewCountryInfo }></Route>
           <Route path="/aboutus" component={AboutUs}></Route>
         </Switch>
