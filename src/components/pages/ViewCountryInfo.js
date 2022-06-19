@@ -21,6 +21,21 @@ export default function ViewCountryInfo({
     }
   };
 
+  const getCurrencyList = (currencyObj) => {
+    let currencyKey = Object.keys(currencyObj || {});
+    if (currencyKey !== undefined && currencyKey.length < 2) {
+      return `${currencyObj[currencyKey].name} -
+        ${currencyObj[currencyKey].symbol}`;
+    } else {
+      let currencyStr = "";
+      currencyKey.forEach((key) => {
+        currencyStr += `${currencyObj[key].name} -
+        ${currencyObj[key].symbol}, `;
+      });
+      return currencyStr.substring(0,currencyStr.lastIndexOf(","));
+    }
+  };
+
   const getCountryData = async (name) => {
     console.log("Fetching Country Data from API, Country: " + name);
     await service.getCountryInfo(name).then(
@@ -74,7 +89,7 @@ export default function ViewCountryInfo({
 
                 <Row>
                   <Col>Currencies: </Col>
-                  <Col>{Object.keys(country.currencies || {})}</Col>
+                  <Col>{getCurrencyList(country.currencies)}</Col>
                 </Row>
 
                 <Row>
